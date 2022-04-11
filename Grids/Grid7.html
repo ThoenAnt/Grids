@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #DCC912;
+  padding: 10px;
+  border-style: dotted;
+}
+
+.grid-item {
+  background-color: #178DA5;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+</style>
+</head>
+<body>
+
+<h1>Things you should not say in a weeding speech.</h1>
+<p>Based off Google because I'm tired and procrastinated.</p>
+
+<div class="grid-container">
+  <div class="grid-item item1">So what's next, a baby?</div>
+  <div class="grid-item item2">Kiss your freedom goodbye!</div>
+  <div class="grid-item item3">You could've invited some hot girls tonight.</div>  
+  <div class="grid-item item4">Well I guess I owe you fifty bucks now.</div>
+  <div class="grid-item item5">At my wedding...</div>
+</div>
+</body>
+</html>

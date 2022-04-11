@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 200px 200px 200px; 
+  gap: 10px;
+  background-color: #FF5733;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #A21D00;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.qestion-answer, .qestion-checkbox {
+    display: none;
+}
+.qestion-checkbox:checked + .qestion-text {
+    display:none;
+}
+.qestion-checkbox:checked + .qestion-text + .qestion-answer {
+    display:block;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+<div class="question">
+    <input type="checkbox" class="qestion-checkbox" id="q1" />
+    <label for="q1" class="qestion-text">Is it box one?</label>
+    <label for="q1" class="qestion-answer">No</label>
+</div>
+<div class="question">
+    <input type="checkbox" class="qestion-checkbox" id="q2" />
+    <label for="q2" class="qestion-text">Maybe two?</label>
+    <label for="q2" class="qestion-answer">Also no...</label>
+</div>
+<div class="question">
+    <input type="checkbox" class="qestion-checkbox" id="q3" />
+    <label for="q3" class="qestion-text">Third times a charm eh?</label>
+    <label for="q3" class="qestion-answer">Nope, don't rely on that.</label>
+</div>
+<div class="question">
+    <input type="checkbox" class="qestion-checkbox" id="q4" />
+    <label for="q4" class="qestion-text">I put my money on six, but four could be.</label>
+    <label for="q4" class="qestion-answer">Noooo I tricked ya</label>
+</div>
+<div class="question">
+    <input type="checkbox" class="qestion-checkbox" id="q5" />
+    <label for="q5" class="qestion-text">It's not five</label>
+    <label for="q5" class="qestion-answer">I lied, it's five. Good job!</label>
+</div>
+<div class="question">
+    <input type="checkbox" class="qestion-checkbox" id="q6" />
+    <label for="q6" class="qestion-text">It better be six</label>
+    <label for="q6" class="qestion-answer">Hmm try again.</label>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #3FB038; 
+  }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px 200px;
+  gap: 10px;
+  background-color: #0F8A07;
+  padding: 10px;
+  border: 15px
+}
+
+.grid-container > div {
+  background-color: #7DF175;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+img { 
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  object-position: left;
+ }
+ h1 {
+  text-align: center;
+ }
+ @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+
+<h1>This grid shows how many people want to voluntarily go vegan in certain states.</h1>
+
+<div class="grid-container">
+  <div>Minnesota</div>
+  <div>Cali</div>
+  <div>Texas</div>  
+  <div>Maybe ten</div>
+  <div>Half of the people say they do, but 25% of people actually do.</div>
+  <div>DON'T ASK ANYONE FROM TEXAS <img src="https://i.imgflip.com/5657ut.jpg"></div>  
+</div>
+
+
+</body>
+</html>
+
+

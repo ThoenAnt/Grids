@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #90F278;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  border: 15px;
+  border-style: dotted;
+  font-family: monospace; 
+}
+.item2 {
+  border: 15px;
+  border-style: groove;
+  border-color: #D8873A
+}
+.item3 {
+  border-color: #F278C8;
+  border: 20px;
+  border-style: double;
+}
+.item4 {
+  border: 10px;
+  border-style: ridge;
+  border-color: #F278C8;
+  font-family: fantasy;
+}
+.item5 {
+  border: 15px;
+  border-style: inset; 
+  font-family:  
+}
+p {
+  font-size: 15px;
+}
+img {
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: contain;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This Grid is about the most recent Cow-related New Articles in the make believe world that Cows are facing severe unemployement.</p>
+
+<div class="grid-container">
+  <div class="item1">Cows lose their jobs as milk prices drop</div>
+  <div class="item2">Which cows have it worst? <p>Studies show that Jersey cows are having the highest unemployment rate.</p><p>What can you do to help Jersey cows today?</p> <img src="https://i0.wp.com/roughandtumblefarmhouse.com/wp-content/uploads/2020/10/jersey-cow-rough-and-tumble-farmhouse.jpg?fit=480%2C640&ssl=1"></div>
+  <div class="item3">Cows everywhere around the US are struggling</div>  
+  <div class="item4">Did you help the cow economy today?</div>
+  <div class="item5">What happened to "Got Milk?"</div>
+</div>
+
+</body>
+</html>
+
+
